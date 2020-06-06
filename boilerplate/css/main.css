@@ -1,0 +1,103 @@
+
+/* Importing Normalize css */
+@import url("normalize.css");
+
+
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+body{
+    background-image: url("https://source.unsplash.com/user/willianjusten");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.heading{
+    text-align: center;   
+}
+.flex{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5rem;
+}
+
+.form{
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.form input{
+    padding: .7rem;
+    width: 30%;
+    color: honeydew;
+    text-align: center;
+    box-shadow: 2px 0 5px gray;
+    outline: none;
+    border: 1px solid black;
+    /* color: coral; */
+    text-align: left;
+    background-color: transparent;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.form input:focus{
+    border: 2px solid aqua;
+    transform: scale(1.025);
+    background-color: rgba(15, 15, 15, 0.699);
+}
+
+.dropdown-parent {
+    /* background-color: black; */
+    color: blanchedalmond;
+     height: 2rem;
+    width: 2rem; 
+    margin-left: 1rem;
+    /* padding: 1rem 1rem; */
+    /* position: absolute; */
+}
+.dropdown .fas  {
+    /* padding: 1rem; */
+    font-size: 2rem;
+    text-align: center;
+    color:rgba(15, 15, 15, 0.699);
+}
+.dropdown-one{
+    display: none;
+    position: relative;
+}
+.dropdown:hover > .dropdown-one{
+    display: block;  
+}
+.dropdown-one {
+    margin-top: 10px;
+    width: 12rem;
+    margin: 0 auto;
+    text-align: center;
+    /* padding: 15px; */
+    /* margin-left: -10px; */
+}
+
+.dropdown-one li{
+    border-bottom: 1px solid gray;
+    padding: 1.5rem;
+    background-color: black;
+    color: tomato;
+}
+
+.dropdown-one li:hover{
+    background-color: #FF887B;
+}
