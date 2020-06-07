@@ -141,3 +141,30 @@ body{
 .dropdown-one li:hover{
     background-color: rgb(195, 188, 188);
 }
+
+
+/* CSS FOR ARTICLE */
+.article-container {
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid black;
+    /* padding: 4rem; */
+}
+a {
+    text-decoration: none;
+}
+h1{
+    color: black
+}
+.article {
+    text-align: center;
+    /* height: 100vh; */
+}
+.image {
+    width: 60%;
+    border-radius: 12px;
+    box-shadow: 12px 12px 80px black;
+}
+.brd a{
+    display: none;
+}
