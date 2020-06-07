@@ -1,16 +1,21 @@
 {
   "name": "CoderTab",
-  "description" : "Making you a better programmer with each new tab",
+  "description": "Making you a better programmer with each new tab",
   "version": "1.0.0",
   "manifest_version": 2,
-  "chrome_url_overrides":{
-    "newtab" : "index.html"
+  "chrome_url_overrides": {
+    "newtab": "index.html"
   },
-  "content_scripts":[
+  "content_scripts": [
     {
-    "js": ["main.js"]
-   
+      "js": [
+        "./js/main.js"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ]
     }
-   ]
-
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.embedly.com; object-src 'self'"
 }
