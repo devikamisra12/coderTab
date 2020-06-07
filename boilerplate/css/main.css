@@ -10,6 +10,9 @@
     box-sizing: border-box;
     line-height: 1.5;
 }
+a {
+    text-decoration: none;
+}
 body{
     background-image: url("https://source.unsplash.com/user/willianjusten");
     background-repeat: no-repeat;
@@ -18,46 +21,71 @@ body{
     height: 100vh;
     overflow: hidden;
 }
-.container{
+/* .container{
     width: 800px;
     margin: 0 auto;
-}
+} */
 
 .heading{
     text-align: center;   
 }
 .flex{
     display: flex;
-    flex-flow: row nowrap;
+    /* flex-flow: row nowrap; */
+    justify-content: space-between;
+    /* align-items: center; */
     gap: 5rem;
 }
 
-.form{
+.search-bar-container  {
+    width: 40.75rem;
+    /* display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
     margin-top: 5rem;
+    justify-items: center; */
+    /* margin: 0 auto; */
+    margin: 7rem auto 0 auto;
 }
-
-.form input{
+/* .search-bar-container{
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+} */
+.form {
     padding: .7rem;
-    width: 30%;
+    /* width: ; */
     color: honeydew;
     text-align: center;
-    box-shadow: 2px 0 5px gray;
-    outline: none;
-    border: 1px solid black;
+    /* box-shadow: 2px 0 0 gray; */
+    box-shadow: 7px 7px 15px #bbcfdaef, -4px -4px 13px rgba(255, 255, 255, 0.87),
+        inset 4px 4px 8px rgba(209, 217, 230 , 0.2),
+        inset -8px -8px 8px rgba(255, 255, 255 , 0.2);
+    /* outline: none; */
+    /* border: 1px solid black; */
     /* color: coral; */
     text-align: left;
-    background-color: transparent;
+    background-color: #e8eff5;
     border-radius: 15px;
     font-weight: 500;
     font-size: 1.5rem;
 }
+body{
+    background-color: #e8eff5;
+}
+.form input {
+    border: none;
+    outline: none;
+    padding: .3rem;
+    width: 100%;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.692);
+}
 .form input:focus{
-    border: 2px solid aqua;
-    transform: scale(1.025);
-    background-color: rgba(15, 15, 15, 0.699);
+    /* border: 2px solid aqua; */
+    transform: scale(1);
+    /* background-color: rgba(15, 15, 15, 0.699); */
 }
 
 .dropdown-parent {
@@ -73,7 +101,13 @@ body{
     /* padding: 1rem; */
     font-size: 2rem;
     text-align: center;
-    color:rgba(15, 15, 15, 0.699);
+    /* color:rgba(15, 15, 15, 0.699); */
+    color: grey;
+    border-radius: 50%;
+    box-shadow: 7px 7px 15px #bbcfdaef, -4px -4px 13px rgba(255, 255, 255, 0.87),
+        inset 4px 4px 8px rgba(209, 217, 230 , 0.2),
+        inset -8px -8px 8px rgba(255, 255, 255 , 0.2);
+
 }
 .dropdown-one{
     display: none;
@@ -83,21 +117,27 @@ body{
     display: block;  
 }
 .dropdown-one {
-    margin-top: 10px;
-    width: 12rem;
+    /* margin-top: 15px; */
+    width: 4rem;
     margin: 0 auto;
     text-align: center;
     /* padding: 15px; */
     /* margin-left: -10px; */
+    transform: translateX(-30%);
 }
 
 .dropdown-one li{
+    cursor: pointer;
     border-bottom: 1px solid gray;
-    padding: 1.5rem;
-    background-color: black;
-    color: tomato;
+    padding: .8rem;
+    background-color: #e8eff5;
+    color: grey;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4),
+    -2px -2px 5px rgba(255, 255, 255,1),
+    inset -5px -5px 5px rgba(200,200,200,1);
 }
 
 .dropdown-one li:hover{
-    background-color: #FF887B;
+    background-color: rgb(195, 188, 188);
 }
