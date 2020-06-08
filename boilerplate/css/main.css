@@ -31,14 +31,15 @@ body{
 }
 .flex{
     display: flex;
-    /* flex-flow: row nowrap; */
+    flex-flow: row nowrap;
     justify-content: space-between;
     /* align-items: center; */
-    gap: 5rem;
+    /* gap: 5rem; */
 }
 
 .search-bar-container  {
-    width: 43.75rem;
+    max-width: 700px;
+    /* width: 43.75rem;  */
     /* display: flex;
     align-content: center;
     justify-content: center;
@@ -55,7 +56,7 @@ body{
 } */
 .form {
     padding: .7rem;
-    /* width: ; */
+    /* width: 50vw; */
     color: honeydew;
     text-align: center;
     /* box-shadow: 2px 0 0 gray; */
@@ -72,6 +73,7 @@ body{
     font-size: 1.5rem;
     margin-top:-2rem;
     margin-bottom: 2rem;
+
 }
 body{
     background-color: #e8eff5;
@@ -80,7 +82,7 @@ body{
     border: none;
     outline: none;
     padding: .3rem;
-    width: 100%;
+    width: 70%;
     background-color: transparent;
     color: rgba(0, 0, 0, 0.692);
 }
@@ -93,12 +95,19 @@ body{
 .dropdown-parent {
     /* background-color: black; */
     color: blanchedalmond;
-     height: 2rem;
+     /* height: 2rem; */
+     /* border-radius: 15px; */
+     padding: 0.25rem 0;
     width: 2rem; 
     margin-left: 1rem;
     /* padding: 1rem 1rem; */
     /* position: absolute; */
+    width: 30%;
+    border-bottom: 1px solid rgba(49, 49, 49, 0.466);
+    /* padding: 0.5rem; */
 }
+
+
 .dropdown .fas  {
     /* padding: 1rem; */
     font-size: 2rem;
@@ -111,14 +120,14 @@ body{
         inset -8px -8px 8px rgba(255, 255, 255 , 0.2);
 
 }
-.dropdown-one{
+/* .dropdown-one{
     display: none;
     position: relative;
-}
+} */
 .dropdown:hover > .dropdown-one{
     display: block;  
 }
-.dropdown-one {
+/* .dropdown-one {
     /* margin-top: 15px; */
     width: 4rem;
     margin: 0 auto;
@@ -128,7 +137,7 @@ body{
     transform: translateX(-30%);
     position: relative;
     z-index: 10000;
-}
+} */
 
 .dropdown-one li{
     cursor: pointer;
@@ -145,6 +154,20 @@ body{
 .dropdown-one li:hover{
     background-color: rgb(195, 188, 188);
 }
+
+#searchselect {
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    color: rgba(0, 0, 0, 0.692);
+    font-weight: 500;
+       cursor: pointer;
+       outline: none;
+    
+}
+
+
 
 
 /* CSS FOR ARTICLE */
