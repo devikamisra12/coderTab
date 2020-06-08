@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
     <link rel="stylesheet" href="./css/main.css" />
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
@@ -23,15 +23,24 @@
                 <input class="search-input" type="text" placeholder="Search..">
                 <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
                 <h4 class="dropdown dropdown-parent">
-                    <i class="fas fa-chevron-circle-down"></i>
-                    <ul class="dropdown-one">
+                    <!-- <label for="searchselect" class="arrow">                    <i class="fas fa-chevron-circle-down"></i></label> -->
+                    <select name="searchselect" id="searchselect">
+                        <option value="google">Google</option>
+                        <option value="mdn">MDN</option>
+                        <option value="csstricks">CSS Tricks</option>
+                        <option value="jsinfo">Javascript.Info</option>
+                        <option value="github">Github</option>
+                        <option value="stackof">Stack Overflow</option>
+                    </select>
+                    <!-- <i class="fas fa-chevron-circle-down"></i> -->
+                    <!-- <ul class="dropdown-one">
                         <li><a id="git" href="GitHub"></a> <i class="fab fa-github"></i></li>
                         <li><a id="mdn" href="MDN"></a>M </li>
                         <li><a id="css" href="Css trick"></a>C </li>
                         <li><a id="w3s" href="W3 school"></a> W</li>
                         <li><a id="sof" href="Stackover flow"></a><i class="fab fa-stack-overflow"></i></li>
                         <li><a id="codewars" href="Codewars"></a> CW</li>
-                    </ul>
+                    </ul> -->
                 </h4>
             </div>
         </div>
