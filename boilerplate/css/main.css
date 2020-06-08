@@ -14,7 +14,7 @@ a {
     text-decoration: none;
 }
 body{
-    background-image: url("https://source.unsplash.com/user/willianjusten");
+    /* background-image: url("https://source.unsplash.com/user/willianjusten"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -38,7 +38,7 @@ body{
 }
 
 .search-bar-container  {
-    width: 40.75rem;
+    width: 43.75rem;
     /* display: flex;
     align-content: center;
     justify-content: center;
@@ -70,6 +70,8 @@ body{
     border-radius: 15px;
     font-weight: 500;
     font-size: 1.5rem;
+    margin-top:-2rem;
+    margin-bottom: 2rem;
 }
 body{
     background-color: #e8eff5;
@@ -124,6 +126,8 @@ body{
     /* padding: 15px; */
     /* margin-left: -10px; */
     transform: translateX(-30%);
+    position: relative;
+    z-index: 10000;
 }
 
 .dropdown-one li{
@@ -145,10 +149,15 @@ body{
 
 /* CSS FOR ARTICLE */
 .article-container {
+    background: #e8eff5;
     max-width: 700px;
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* padding: 4rem; */
+    border-radius: 15px;
+    box-shadow: 7px 7px 15px #bbcfdaef, -4px -4px 13px rgba(255, 255, 255, 0.87),
+    inset 4px 4px 8px rgba(209, 217, 230 , 0.2),
+    inset -8px -8px 8px rgba(255, 255, 255 , 0.2);
 }
 a {
     text-decoration: none;
@@ -158,6 +167,8 @@ h1{
 }
 .article {
     text-align: center;
+    margin-top: 4rem;
+    padding-top: 1rem;
     /* height: 100vh; */
 }
 .image {
@@ -167,4 +178,17 @@ h1{
 }
 .brd a{
     display: none;
+}
+* .card .art-bd-img {
+    height: 12.5rem;
+}
+
+
+.card {
+    width: 400px !important;
+}
+
+.embedly-card-hug {
+    height: 342px;
+    overflow-y: scroll;
 }
