@@ -20,7 +20,10 @@ body{
     background-position: center;
     height: 100vh;
     overflow: hidden;
+    background-color: #e8eff5;
+   
 }
+
 /* .container{
     width: 800px;
     margin: 0 auto;
@@ -63,6 +66,9 @@ body{
     box-shadow: 7px 7px 15px #bbcfdaef, -4px -4px 13px rgba(255, 255, 255, 0.87),
         inset 4px 4px 8px rgba(209, 217, 230 , 0.2),
         inset -8px -8px 8px rgba(255, 255, 255 , 0.2);
+
+
+     
     /* outline: none; */
     /* border: 1px solid black; */
     /* color: coral; */
@@ -71,13 +77,11 @@ body{
     border-radius: 15px;
     font-weight: 500;
     font-size: 1.5rem;
-    margin-top:-2rem;
+    margin-top:-3.5rem;
     margin-bottom: 2rem;
 
 }
-body{
-    background-color: #e8eff5;
-}
+
 .form input {
     border: none;
     outline: none;
@@ -107,6 +111,8 @@ body{
     /* padding: 0.5rem; */
 }
 
+.fa-chevron-circle-down  {
+
 
 .dropdown .fas  {
     /* padding: 1rem; */
@@ -118,6 +124,8 @@ body{
     box-shadow: 7px 7px 15px #bbcfdaef, -4px -4px 13px rgba(255, 255, 255, 0.87),
         inset 4px 4px 8px rgba(209, 217, 230 , 0.2),
         inset -8px -8px 8px rgba(255, 255, 255 , 0.2);
+
+    
 
 }
 /* .dropdown-one{
@@ -139,7 +147,7 @@ body{
     z-index: 10000;
 } */
 
-.dropdown-one li{
+li{
     cursor: pointer;
     border-bottom: 1px solid gray;
     padding: .8rem;
@@ -149,6 +157,7 @@ body{
     box-shadow: 2px 2px 5px rgba(0,0,0,0.4),
     -2px -2px 5px rgba(255, 255, 255,1),
     inset -5px -5px 5px rgba(200,200,200,1);
+
 }
 
 .dropdown-one li:hover{
@@ -173,14 +182,18 @@ body{
 /* CSS FOR ARTICLE */
 .article-container {
     background: #e8eff5;
+    /* background-color:rgb(38, 40, 43); */
     max-width: 700px;
     margin: 0 auto;
     /* border: 1px solid black; */
     /* padding: 4rem; */
     border-radius: 15px;
+    
     box-shadow: 7px 7px 15px #bbcfdaef, -4px -4px 13px rgba(255, 255, 255, 0.87),
     inset 4px 4px 8px rgba(209, 217, 230 , 0.2),
     inset -8px -8px 8px rgba(255, 255, 255 , 0.2);
+
+    
 }
 a {
     text-decoration: none;
@@ -215,3 +228,86 @@ h1{
     height: 342px;
     overflow-y: scroll;
 }
+
+/* slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 27px;
+    margin: 0.5rem;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(58, 60, 61);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #e8eff5;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  
+  input:checked + .slider {
+    background-color: #e8eff5;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+    background-color: gray;
+  }
+  
+
+
+  .bs2 {
+    box-shadow: 7px 7px 40px #000000ef, -8px -8px 20px rgba(90, 90, 90, 0.87),
+    /* inset 4px 4px 8px rgba(209, 217, 230 , 0.2), */
+    inset -2px -2px 8px rgba(0, 0, 0, 0.2);
+  }
+  .bg2 {
+    background-color:rgb(38, 40, 43);
+
+  }
+  .bs3{
+    box-shadow: 7px 7px 40px #000000ef, -2px -2px 5px rgba(90, 90, 90, 0.87),
+    /* inset 4px 4px 8px rgba(209, 217, 230 , 0.2), */
+    inset -2px -2px 8px rgba(0, 0, 0, 0.2);
+  }

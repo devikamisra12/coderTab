@@ -153,6 +153,32 @@ function handleLoad() {
 }
 
 
+let input = document.querySelector(".checkbox");
+let articleContainer = document.querySelector(".article-container");
+let body = document.querySelector("body");
+const form = document.querySelector(".form");
+// const ul = document.querySelector(".dropdown-one");
+const li = document.querySelectorAll("li");
+const dropdown = document.querySelector(".fa-chevron-circle-down");
+
+
+function handleClick(event) {
+    console.log(event.target);
+    articleContainer.classList.toggle("bs2");
+    articleContainer.classList.toggle("bg2");
+    body.classList.toggle("bg2");
+    form.classList.toggle("bg2");
+    form.classList.toggle("bs2");
+    li.forEach(e => {e.classList.toggle("bg2")
+    e.classList.toggle("bs2");
+});
+    // ul.classList.toggle("bg2");
+    dropdown.classList.toggle("bs3");
+}
+
+
+input.addEventListener('click', handleClick);
+
 
 window.addEventListener("load", handleLoad);
 
