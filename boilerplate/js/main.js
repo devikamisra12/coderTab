@@ -155,3 +155,60 @@ function handleLoad() {
 
 
 window.addEventListener("load", handleLoad);
+
+
+// Search Selector
+
+const input = document.querySelector(".search-input");
+
+const select = document.querySelector("#searchselect");
+let url = "";
+
+
+let selected = select.value;
+
+input.addEventListener("keyup", (e) => {
+
+    if (e.keyCode == 13) {
+        let searchString = input.value.trim();
+        
+        let selected = select.value;
+
+        if (searchString) {
+        
+        switch(selected) {
+            case "mdn":
+              url = "https://developer.mozilla.org/en-US/search?q=test" + searchString.split(" ").join("+");
+              window.location.href = url;
+              break;
+              case "csstricks":
+                url = "https://css-tricks.com/?s=" + searchString.split(" ").join("%");
+                window.location.href = url;
+                break;
+                    case "stackof":
+                        url = "https://stackoverflow.com/search?q=" + searchString.split(" ").join("+");
+                        window.location.href = url;
+                        break;
+                        case "github":
+                            url = "https://github.com/search?q=" + searchString.split(" ").join("+");
+                            window.location.href = url;
+                            break;
+                            case "jsinfo":
+                                url = "https://javascript.info/search/?query=" + searchString.split(" ").join("+") + "&type=article";
+                                window.location.href = url;
+                                break;
+                                case "google":
+                                    url = "https://www.google.com/search?q=" + searchString.split(" ").join("+");
+                                    window.location.href = url;
+                                    break;
+          } 
+        } 
+        input.value = "";}
+
+        
+    })
+
+document.querySelector(".fas").addEventListener("click", () => {
+    document.querySelector("#searchselect").click();
+    console.log("clicked");
+})
